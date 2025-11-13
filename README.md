@@ -21,17 +21,6 @@ docker run \
 
 When you start the `github-shr` image, you can adjust the configuration of the container by passing one or more environment variables to the `docker run` command.
 
-- **REPOSITORY:**  
-  The full name of the GitHub repository the runner will register to.  
-  Format: `<owner>/<repository>`  
-  Example: `nicola-strappazzon/project`
-
-- **TOKEN:**  
-  A GitHub Actions *registration token* used to create and authenticate the self-hosted runner.  
-  You can generate this token from:  
-  *GitHub → Settings → Actions → Runners → New self-hosted runner → Generate token*.  
-  This token is temporary and needs to be regenerated if you re-register the runner.
-
-- **NAME:**  
-  A custom name for this runner instance.  
-  Useful to identify machines when running multiple self-hosted runners (e.g., `raspberry`, `builder-01`, `ci-node`).
+- **REPOSITORY:** The full name of the GitHub repository the runner will register to `<owner>/<repository>`.
+- **TOKEN:** A GitHub Actions *registration token* used to create and authenticate the self-hosted runner.
+- **NAME:** A custom name for this runner instance.
