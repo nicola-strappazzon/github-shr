@@ -1,6 +1,14 @@
 # GitHub Actions - Self-hosted runner
 
-This image is maintained by Nicola Strappazzon and will be updated regularly on best-effort basis. The image is based on debian bookworm slim and only contains the build result of this repository.
+This is a simple, lightweight, and efficient way to run a GitHub Actions self-hosted runner using Docker on your own hardware, with a focus on clarity, ease of maintenance, and zero overengineering.
+
+---
+
+A GitHub Actions self-hosted runner is a machine you manage yourself to execute the jobs defined in your GitHub Actions workflows. Instead of relying solely on GitHub-hosted runners, you can use your own hardware - such as a Raspberry Pi - to gain more control, reduce queue times, avoid usage limits, and take advantage of local resources.
+
+This project provides a dockerized, lightweight, and minimal self-hosted runner. Unlike many solutions found online, which tend to include unnecessary complexity or heavy architectures, this implementation focuses strictly on the essentials: registering the runner, communicating with GitHub Actions, and executing the required jobs.
+
+The image is based on Debian Bookworm Slim and contains only the compiled output of this repository—no additional services, no unnecessary layers, and no extra tools. This makes it especially suitable for resource-constrained environments such as ARM devices like the Raspberry Pi, where simplicity and low overhead are key.
 
 ## Run
 
