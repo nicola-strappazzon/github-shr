@@ -7,4 +7,4 @@ set -euo pipefail
     --token ${TOKEN} \
     --name ${NAME}
 
-exec ./run.sh
+./run.sh

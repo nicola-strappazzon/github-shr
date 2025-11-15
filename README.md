@@ -17,6 +17,7 @@ To run container:
 ```bash
 docker run \
 	--detach \
+	--restart=always \
 	--name github-shr-project \
 	--env REPOSITORY=nicola-strappazzon/project \
 	--env TOKEN=<github-action-token> \
