@@ -19,7 +19,7 @@ RUN rm -rf /var/lib/apt/lists/*
 WORKDIR /tmp
 
 ENV RUNNER_ALLOW_RUNASROOT=1
-RUN curl --silent --output actions-runner-linux.tar.gz -L https://github.com/actions/runner/releases/download/v2.329.0/actions-runner-linux-arm64-2.329.0.tar.gz
+RUN curl --silent --output actions-runner-linux.tar.gz -L https://github.com/actions/runner/releases/download/v2.330.0/actions-runner-linux-arm64-2.330.0.tar.gz
 RUN tar xzf ./actions-runner-linux.tar.gz
 RUN rm actions-runner-linux.tar.gz
 RUN chmod -R 1777 /tmp/
